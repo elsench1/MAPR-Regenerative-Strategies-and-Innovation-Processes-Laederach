@@ -1,9 +1,9 @@
 \documentclass{zhaw-thesis}
 
 \newcommand{\authorA}{Christopher Elsener}
-\newcommand{\authorB}{...}
-\newcommand{\authorC}{...}
-\newcommand{\authorD}{...}
+\newcommand{\authorB}{Sarah Zimmermann}
+\newcommand{\authorC}{Matthew Hundhammer}
+\newcommand{\authorD}{Leni Pfeiffer}
 
 % -----------------------------------------------------------------------------
 % Dokumentdaten
@@ -20,6 +20,7 @@
 % Bibliographie-Dateien
 % \addbibresource{reference/references_c.bib}
 % \addbibresource{reference/bibliography.bib}
+\addbibresource{reference/laederach_sources.bib}
 
 
 \begin{document}
@@ -73,9 +74,16 @@
 % \newpage
 % \include{Kapitel/07_Conclusions_and_Vision/Conclusions_Vision_Main}
 
+\input{Chapter/Introduction}
+\input{Chapter/Problem_Analysis}
+\input{Chapter/Transformation_Vision}
+\input{Chapter/Framework_application}
+\input{Chapter/Concrete_Transformation_Actions}
+\input{Chapter/Stakeholders}
+
 
 \cleardoubleemptypage
-% \printbibliography
+\printbibliography
 \cleardoubleemptypage
 
 % \include{Kapitel/AI_deklaration}
@@ -91,5 +99,6 @@
 
 \appendix
 % \include{Kapitel/10_Appendix/Appendix_Main}
+\include{Chapter/Appendix/main_old}
 
 \end{document}
