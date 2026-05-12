@@ -1,0 +1,66 @@
+\setlength{\parindent}{0pt}
+
+\begin{titlepage}
+  \enlargethispage{1cm}
+  \thispagestyle{empty}
+
+  % Logo
+  \begin{figure}[htbp]
+    \includegraphics[width=0.45\textwidth]{Logos/Logo-IUNR.png}
+  \end{figure}
+
+  % Abstand bis Titelblock
+  \vspace*{45mm}
+
+  % % Titelblock
+  % {\sffamily
+  %   {\Huge\bfseries\color{pantone 2945}\thesistitle\par}
+  %   \vspace{6mm}
+  %   % {\large\bfseries\color{mygrau}\nohyphens{\thesissubtitle}\par}
+  % }
+
+  % Titelblock
+{\sffamily
+  {\Huge\bfseries\color{pantone 2945}\thesistitle\par}
+  \vspace{6mm}
+
+  {\LARGE\bfseries\color{mygrau}
+    \begin{minipage}{\textwidth}
+      \raggedright
+      \hyphenpenalty=100
+      \exhyphenpenalty=100
+      \emergencystretch=2em
+      \thesissubtitle
+    \end{minipage}
+    \par
+  }
+}
+
+  % Füllt den Raum zwischen Titel und Infoblock dynamisch
+  \vfill
+
+
+  % Infoblock
+  {\sffamily\large
+    \begin{tabularx}{\textwidth}{@{}p{40mm} X@{}}
+      Date: &
+      \thesisdate \\[4mm]
+
+      Author: &
+      \begin{tabular}[t]{@{}l@{}}
+		\authorD \\
+		\authorC \\
+        \authorB \\
+        \authorA
+      \end{tabular} \\[9mm]
+
+      Supervision: &
+      \begin{tabular}[t]{@{}l@{}}
+        \thesissupervisora \\
+        \thesissupervisorb
+      \end{tabular}
+    \end{tabularx}
+    \vspace{20mm}
+  }
+
+\end{titlepage}
